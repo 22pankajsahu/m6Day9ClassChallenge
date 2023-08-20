@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changable Div</title>
+    <meta name="author" content="Pankaj Sahu">
+    <meta name="keywords" content="colour - background-colour - padding - font size - font weight">
+    <meta name="description" content="You need to make 5 dropdowns which can change the following properties of a div using DOM manipulation">
+
+    <style>
+        #changeableDiv {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="changeableDiv">This is a div to be changed</div>
+
+    <select id="colorSelect" onchange="changeColor()">
+        <option value="">Select Color</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+    <select id="bgColorSelect" onchange="changeBgColor()">
+        <option value="">Select Background Color</option>
+        <option value="yellow">Yellow</option>
+        <option value="orange">Orange</option>
+        <option value="pink">Pink</option>
+    </select>
+    <select id="paddingSelect" onchange="changePadding()">
+        <option value="">Select Padding</option>
+        <option value="5px">5px</option>
+        <option value="10px">10px</option>
+        <option value="15px">15px</option>
+    </select>
+    <select id="fontSizeSelect" onchange="changeFontSize()">
+        <option value="">Select Font Size</option>
+        <option value="12px">12px</option>
+        <option value="16px">16px</option>
+        <option value="20px">20px</option>
+    </select>
+    <select id="fontWeightSelect" onchange="changeFontWeight()">
+        <option value="">Select Font Weight</option>
+        <option value="normal">Normal</option>
+        <option value="bold">Bold</option>
+        <option value="bolder">Bolder</option>
+    </select>
+
+    <script>
+
+        function changeColor() {
+            const colorSelect = document.getElementById("colorSelect");
+            const selectedColor = colorSelect.value;
+            document.getElementById("changeableDiv").style.color = selectedColor;
+        }
+
+        function changeBgColor() {
+            const bgColorSelect = document.getElementById("bgColorSelect");
+            const selectedBgColor = bgColorSelect.value;
+            document.getElementById("changeableDiv").style.backgroundColor = selectedBgColor;
+        }
+
+        function changePadding() {
+            const paddingSelect = document.getElementById("paddingSelect");
+            const selectedPadding = paddingSelect.value;
+            document.getElementById("changeableDiv").style.padding = selectedPadding;
+        }
+
+        function changeFontSize() {
+            const fontSizeSelect = document.getElementById("fontSizeSelect");
+            const selectedFontSize = fontSizeSelect.value;
+            document.getElementById("changeableDiv").style.fontSize = selectedFontSize;
+        }
+
+        function changeFontWeight() {
+            const fontWeightSelect = document.getElementById("fontWeightSelect");
+            const selectedFontWeight = fontWeightSelect.value;
+            document.getElementById("changeableDiv").style.fontWeight = selectedFontWeight;
+        }
+
+    </script>
+</body>
+
+</html>
