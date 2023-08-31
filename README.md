@@ -9,6 +9,7 @@ This website demonstrates how to use JavaScript and DOM manipulation to change v
 
 - [Introduction](#introduction)
 - [Demo](#demo)
+- [Screenshots](#screenshots)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [JavaScript Functionality](#javascript-functionality)
@@ -25,6 +26,15 @@ The purpose of this project is to showcase how you can dynamically change the vi
 You can see a live demo of the project [here](https://22pankajsahu.github.io/m6Day9ClassChallenge/).
 
 ---
+
+## Screenshots
+
+Include relevant screenshots of the application here.
+
+![image](https://github.com/22pankajsahu/m6Day9ClassChallenge/assets/135128502/e8cb789b-c7f7-4d6c-a6bc-ecec4aa53ed4)
+
+![image](https://github.com/22pankajsahu/m6Day9ClassChallenge/assets/135128502/f7d52f0b-e69a-4afc-8918-44638b598a22)
+
 ## Usage
 
 1. Clone or download this repository to your local machine.
